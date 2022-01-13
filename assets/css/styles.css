@@ -28,8 +28,8 @@ body {
 } */
 
 .item {
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
 
   font-size: 2em;
   color: white;
@@ -70,6 +70,10 @@ body {
 
 .just-space-evenly {
   justify-content: space-evenly;
+}
+
+.alignI-stretch {
+  align-items: stretch;
 }
 
 .alignI-flex-start {
