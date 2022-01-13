@@ -199,6 +199,8 @@ body {
 
 .selections {
   display: none;
+  flex-direction: column;
+
   background-color: slateblue;
   padding: 10px;
   border: 4px solid rgb(58, 45, 133);
@@ -221,12 +223,6 @@ body {
 
 .selections div + div {
   margin-top: 10px;
-}
-
-#settings-check:checked ~ .selections {
-  display: flex;
-  /* align-content: center; */
-  flex-direction: column;
 }
 
 .svg-container {
