@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script defer src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div
+        class="container flexContainer flexDirHint other flex-dir-row just-flex-start alignI-flex-start alignC-flex-start"
+        id="flex-container"
+      >
+        <div class="item">
+          1
+        </div>
+        <div class="item">
+          2
+        </div>
+        <div class="item">
+          3
+        </div>
+        <div class="item">
+          4
+        </div>
+      </div>
+      <div class="svg-container">
+        <svg
+          class="svg up"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"
+          />
+        </svg>
+        <svg
+          class="svg right"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+          />
+        </svg>
+        <svg
+          class="svg down"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"
+          />
+        </svg>
+        <svg
+          class="svg left"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+          />
+        </svg>
+      </div>
+
+      <div id="settings">
+        <input type="checkbox" id="settings-check" />
+        <label for="settings-check" class="settings-btn">
+          Settings
+        </label>
+
+        <div class="flexContainer just-space-evenly selections" id="selections">
+          <div>
+            <label for="direction">Direction</label>
+            <select name="direction" id="direction">
+              <option value="flex-dir-row">Row</option>
+              <option value="flex-dir-column">Column</option>
+              <option value="flex-dir-row-rev">Row reverse</option>
+              <option value="flex-dir-column-rev">Column reverse</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="just-content">Justify-content</label>
+            <select name="just-content" id="just-content">
+              <option value="just-flex-start">Flex start</option
+              >\
+              <option value="just-flex-end">Flex end</option>
+              <option value="just-center">Flex center</option>
+              <option value="just-space-around">Space-around</option>
+              <option value="just-space-between">Space-between</option>
+              <option value="just-space-evenly">Space-evenly</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="align-items">Align items</label>
+            <select name="align-items" id="align-items">
+              <option value="alignI-flex-start">Flex start</option
+              >\
+              <option value="alignI-flex-end">Flex end</option>
+              <option value="alignI-center">Flex center</option>
+              <option value="alignI-space-around">Space-around</option>
+              <option value="alignI-space-between">Space-between</option>
+              <option value="alignI-space-evenly">Space-evenly</option>
+            </select>
+          </div>
+
+          <div hidden>
+            <label for="align-content">Align content</label>
+            <select name="align-content" id="align-content">
+              <option value="alignC-flex-start">Flex start</option
+              >\
+              <option value="alignC-flex-end">Flex end</option>
+              <option value="alignC-center">Flex center</option>
+              <option value="alignC-space-around">Space-around</option>
+              <option value="alignC-space-between">Space-between</option>
+              <option value="alignC-space-evenly">Space-evenly</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
